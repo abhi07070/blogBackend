@@ -15,7 +15,7 @@ const Post = require('./models/Post')
 dotenv.config();
 
 // Set up port and MongoDB connection string
-const port = process.env.PORT || 4040;
+const port = process.env.PORT;
 const mongoUrl = process.env.MONGO_URL;
 const bcryptSalt = bcrypt.genSaltSync(10);
 const jwtSecret = process.env.JWT_SECRET;
